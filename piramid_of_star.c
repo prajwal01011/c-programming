@@ -1,9 +1,14 @@
 #include <stdio.h>
 int main(){
     int i , j ,n;
-
-      printf("How many rows do you want in your piramid : ");
+//TO print star piramid  with rows you like
+     printf("How many rows do you want in your piramid : ");
       scanf("%d",&n);
+printf("\n");
+   printf("=================================================================================================");
+    printf("\n");
+  
+     printf("\n");
 
       for(i=1;i<=n;i++){
 
@@ -17,5 +22,8 @@ int main(){
       }
       printf("\n");
     }
+    printf("\n");
+    printf("=================================================================================================");
+      printf("\n");
     return 0;
 }
