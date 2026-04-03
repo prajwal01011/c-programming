@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main() {
-	top:
     int numinator,denominator,result;
     printf("enter the numinator\n");
     scanf("%d", &numinator);
@@ -24,7 +25,6 @@ int main() {
 
         }
     
-	goto top;
     return 0;
 }
 
