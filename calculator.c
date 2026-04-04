@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
 //  function to call sum
 int sum(int,int );
@@ -36,13 +28,14 @@ int main()
 {
     //function to give user discription and take user input
     int function;
+    int first,second;
     printf(" for add press 1\n subtract is 2\n multipliction is 3 \n division is 4\n ");
     scanf("%d",&function);
     // switch case use to do calculation acaording to user need
     switch(function){
         
     case 1://function to add two number
-    int first,second;
+    
     printf("enter a number:");
     scanf("%d",&first);
      printf("enter a second number:");
@@ -83,15 +76,7 @@ int main()
             printf("\n");
             
         }
-         printf("press 1 to continue program and 0 to end it:");
-        scanf("%d",&user);
-        if(user==0){
-            break;
-        }
-        else{
-            printf("\n");
-            
-        }
+    
         printf("if you want to do multiplication press 1 and to  move to another press 0  \n");
         scanf("%d",&user);
         if(user==1){
