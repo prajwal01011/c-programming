@@ -2,6 +2,7 @@
 //  function to call sum
 int sum(int,int );
 int sum(int x, int y){
+    printf("\n");
     printf("================================================================\n");
     printf("sum is %d\n",x+y);
     printf("================================================================\n");
@@ -10,6 +11,7 @@ int sum(int x, int y){
 // function to call subtraction
 int sub(int,int);
 int sub(int x, int y){
+     printf("\n");
     printf("================================================================\n");
     printf("subtract is %d\n",x-y);
     printf("================================================================\n");
@@ -18,16 +20,18 @@ int sub(int x, int y){
 //function to do multiplication
 int multiplication(int ,int);
 int multiplication(int x,int y){
+    printf("\n");
     printf("================================================================\n");
-    printf("multiplication is %d",x*y);
+    printf("multiplication is %d\n",x*y);
     printf("================================================================\n");
     return x*y;
 }
 //function to do division
 float division(float ,float);
 float division(float x, float y){
+    printf("\n");
     printf("================================================================\n");
-    printf("division is :  %2f",x/y);
+    printf("division is :  %2f\n",x/y);
     printf("================================================================\n");
     return x/y;
 }
@@ -39,7 +43,9 @@ int main()
     int first,second;
     int user;
     float numerator,Denominator;
+    printf("---------------------------------------------------------------\n");
     printf(" TO add press : 1\n TO subtract press : 2\n TO multiply press : 3 \n TO division press : 4 \n ");
+    printf("---------------------------------------------------------------\n");
     printf("please enter the number of function you want to do :");
     scanf("%d",&function);
     // switch case use to do calculation acaording to user need
@@ -79,14 +85,16 @@ int main()
          scanf("%d",&first);
         printf("enter a second number:");
         scanf("%d",&second);
+        printf("================================================================\n");
         sub(first,second);
         }   
 
         else{
+            printf("================================================================\n");
             printf("\n");
         }
         //function to ask user interset
-         printf("press 1 to continue program and 0 to end it:");
+         printf("press 1 to continue program and 0 to end it:\n");
         printf("================================================================\n");
         scanf("%d",&user);
         if(user==0){
@@ -94,6 +102,7 @@ int main()
             break;
         }
         else{
+            printf("================================================================\n");
             printf("\n");
             
         }
@@ -104,20 +113,21 @@ int main()
         case 3://case to do multiplication
         printf("================================================================\n");
         printf("you have presssed 3 to do multiplication \n");
+        printf("================================================================\n");
         printf("enter a number:");
          scanf("%d",&first);
         printf("enter a second number:");
         scanf("%d",&second);
         printf("================================================================\n");
         multiplication(first,second);
-        
+        printf("================================================================\n");
         }
         else {
             printf("================================================================\n");
             printf("\n");
         }
      //function to ask user interset
-         printf("press 1 to continue program and 0 to end it:");
+         printf("press 1 to continue program and 0 to end it:\n");
          printf("================================================================\n");
         scanf("%d",&user);
         if(user==0){
@@ -131,6 +141,7 @@ int main()
         }
         printf("================================================================\n");
         printf("you want to do division than press 1 and to move to another press 0\n");
+        printf("================================================================\n");
         scanf("%d",&user);
         if(user==1){
         case 4://functon to divide
@@ -143,6 +154,7 @@ int main()
         scanf("%f",&Denominator);
         printf("================================================================\n");
         division(numerator,Denominator);
+        printf("================================================================\n");
         }
         else{
             printf("================================================================\n");
