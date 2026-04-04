@@ -29,6 +29,7 @@ int main()
     //function to give user discription and take user input
     int function;
     int first,second;
+    int user;
     printf(" for add press 1\n subtract is 2\n multipliction is 3 \n division is 4\n ");
     scanf("%d",&function);
     // switch case use to do calculation acaording to user need
@@ -42,7 +43,8 @@ int main()
     scanf("%d",&second);
     
     sum(first,second);
-    int user;//to make sure user is interested in uncomming program
+    
+    //to make sure user is interested in uncomming program
         printf("press 1 to continue program and 0 to end it:");
         scanf("%d",&user);
         if(user==0){
@@ -56,18 +58,20 @@ int main()
         scanf("%d",&user);
         if(user==1){
         
-        case 2://function to do subtraction
+        case 2:
+        //function to do subtraction
          printf("enter a number:");
          scanf("%d",&first);
         printf("enter a second number:");
         scanf("%d",&second);
     
     sub(first,second);
-        }   //function to ask user interset
+        }   
         else{
             printf("\n");
         }
-                printf("press 1 to continue program and 0 to end it:");
+        //function to ask user interset
+         printf("press 1 to continue program and 0 to end it:");
         scanf("%d",&user);
         if(user==0){
             break;
@@ -87,6 +91,9 @@ int main()
         scanf("%d",&second);
         multiplication(first,second);
         
+        }
+        else {
+            printf("\n");
         }
     return 0;
     }
