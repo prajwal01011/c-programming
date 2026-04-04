@@ -58,8 +58,7 @@ int main()
         scanf("%d",&user);
         if(user==1){
         
-        case 2:
-        //function to do subtraction
+        case 2://function to do subtraction
          printf("enter a number:");
          scanf("%d",&first);
         printf("enter a second number:");
