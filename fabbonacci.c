@@ -3,7 +3,7 @@ int fibbo(int n);
 
 int main() {
     // Write C code here
-fibbo(6);
+printf("%d",fibbo(6));
     return 0;
 }
 int fibbo(int n){
@@ -17,6 +17,6 @@ int fibbo(int n){
     int fibbonm1=fibbo(n-1);
     int fibbonm2=fibbo(n-2);
   int  fibbonacci=fibbonm1+fibbonm2;
-   printf("fibbonacci of %d is :%d\n",n,fibbonacci);
+   //printf("fibbonacci of %d is :%d\n",n,fibbonacci);
     return fibbonacci;
 }
